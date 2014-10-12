@@ -10,6 +10,49 @@ body{
 	background: linear-gradient(to bottom,  rgba(35,152,254,0.7) 0%,rgba(143,234,255,0.7) 100%); /* W3C */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='rgba(35,152,254,0.7)', endColorstr='rgba(143,234,255,0.7)',GradientType=0 ); /* IE6-9 */
 }
+a, a:visited, a:focus, a:link{
+	color: inherit;
+	text-decoration: none;
+}
+.banner {
+	position: fixed;
+	width: 100%;
+	background: #000;
+	top: 0;
+	color: #FFF;
+	font-family: sans-serif;
+	text-align: center;
+	padding: 10px;
+	font-weight: lighter;
+	font-size: 13px;
+	z-index: 20;
+}
+.banner a{
+	color: #a3e599;
+	text-decoration: underline;
+}
+.social-banner .text{
+	font-size: 14px;
+	color: #FFF;
+}
+.social-banner {
+	position: fixed;
+	width: 100%;
+	background: #000;
+	bottom: 0;
+	color: #FFF;
+	font-family: sans-serif;
+	text-align: center;
+	padding: 10px;
+	font-weight: lighter;
+	font-size: 13px;
+	z-index: 100;
+}
+.social-banner span.text {
+	margin-right: 20px;
+	position: relative;
+	top: -4px;
+}
 .content{
 	height: 100%;
 	position: absolute;
@@ -270,5 +313,10 @@ body{
 	}
 	100%{
 		margin-left: -350px;
+	}
+}
+@media all and (max-width: 800px){
+	.social-banner, .banner, .git{
+		display: none;
 	}
 }
